@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "frontend-task",
+    "version": "1.0.0",
+    "content_scripts":[
+
+        {
+        "matches":["<all_urls>"],
+        "js": ["Content.js"]
+        }
+
+    ],
+    "browser_action":{
+        "default_popup": "Popup.html",
+        "default_title": "frontend-task"
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+
+}
